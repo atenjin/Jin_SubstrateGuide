@@ -141,7 +141,7 @@ fn execute_block(block: Block) {
 
 在一开始的图里，笔者显然支出一个api的调用，必定需要包裹在`Client`里。在后文介绍API和client的关系。这里我们跳过这层关系，直接找一个区块的打包过程。
 
-显然一个区块能被创建出来，其**必定是在共识流程**中，在Pos中，一般都会退选出一个proposer来构建出这个区块，这里直接指出代码位于`/client/basic-authorship/src/lib.rs:L169`（注意这里位于client目录下）：
+显然一个区块能被创建出来，其**必定是在共识流程**中，在Pos中，一般都会推选出一个proposer来构建出这个区块，这里直接指出代码位于`/client/basic-authorship/src/lib.rs:L169`（注意这里位于client目录下）：
 
 ```rust
 let mut block_builder = self.client.new_block_at(
