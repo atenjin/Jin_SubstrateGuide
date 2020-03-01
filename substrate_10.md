@@ -6,7 +6,7 @@
 
 ## 一个完整的Substrate Runtime
 
-对于一个完成的Runtime，其主要实现位于：`bin/node/cli/src/lib.rs`中。
+对于一个完成的Runtime，其主要实现位于：`bin/node/runtime/src/lib.rs`中。
 
 一个Runtime一定需要含有如下组件：
 
