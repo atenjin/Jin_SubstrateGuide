@@ -1,0 +1,6 @@
+[book]
+authors = ["atenjin"]
+language = "en"
+multilingual = false
+src = "."
+title = "Substrate Guide"
